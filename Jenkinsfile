@@ -26,12 +26,12 @@ environment {
           }
          }
         }
-        // stage("test"){
-        //     steps{
-        //         echo "----------- unit test started -----------"
-        //         sh 'mvn surefire-report:report'
-        //         echo "----------- unit test completed -----------"
-        //     }
-        // }
+        stage("test"){
+            steps{
+                echo "----------- unit test started -----------"
+                sh 'mvn surefire-report:report'
+                echo "----------- unit test completed -----------"
+            }
+        }
     }               
 }
